@@ -1,16 +1,11 @@
-﻿
-
-**Final Project Documentation**
-
-**Valerii Trembovetsky**
-
-**Hotel Management System**
 
 
 
+## Hotel Management System
 
 
-\1. Story
+
+**1. Story**
 
 The system should store clients and employees, for both we want to remember
 
@@ -78,12 +73,6 @@ depending on the seasons. Porter can reserve a table for a client on a given dat
 
 Clients can book outdoor tables only in summer. For indoor tables we want to
 
-2
-
-
-
-
-
 know if they are in a smoking area and for outdoor tables if they are under an
 
 umbrella.
@@ -112,16 +101,14 @@ change request is described by date of creation, description and decision date.
 
 Managers can list all facility change reports, review them and approve or reject.
 
-3
 
 
 
 
 
-\2. Use Case Diagram
+**2. Use Case Diagram**
 
-4
-
+![Use case diagram](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/UseCaseDiagram.png?raw=true)
 
 
 
