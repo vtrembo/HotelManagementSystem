@@ -1,11 +1,11 @@
 
 
 
-## Hotel Management System
+# Hotel Management System
 
 
 
-**1. Story**
+### 1. Story
 
 The system should store clients and employees, for both we want to remember
 
@@ -106,30 +106,30 @@ Managers can list all facility change reports, review them and approve or reject
 
 
 
-**2. Use Case Diagram**
+### 2. Use Case Diagram
 
-![Use case diagram](https://github.com/vtrembo/HotelManagementSystem/main/assets/UseCaseDiagram.png?raw=true)
-
-
+![Use case diagram](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/UseCaseDiagram.png?raw=true)
 
 
-\3. Analytical Class Diagram
 
-5
+
+### 3. Analytical Class Diagram
 
 
 
 
 
-\4. Design Class Diagram
-
-6
 
 
+### 4. Design Class Diagram
 
 
 
-\5. Use Case Scenario
+
+
+
+
+### 5. Use Case Scenario
 
 Name : Report damage facility
 
@@ -141,29 +141,29 @@ porter. At least one facility located in an apartment is stored in the system.
 
 Basic Path:
 
-\1. The actor navigates to the apartments tab.
+1. The actor navigates to the apartments tab.
 
-\2. The system shows the list of all apartments registered in the hotel
+2. The system shows the list of all apartments registered in the hotel
 
 database.
 
-\3. The actor chooses the apartment with damaged facilities.
+3. The actor chooses the apartment with damaged facilities.
 
-\4. The system displays the list of all facilities in this apartment.
+4. The system displays the list of all facilities in this apartment.
 
-\5. The actor chooses the facility he wants to report and presses the button
+5. The actor chooses the facility he wants to report and presses the button
 
 “Report Damaged Facility”.
 
-\6. The system shows the form for the report.
+6. The system shows the form for the report.
 
-\7. The actor fulfils the form and saves the report to the system by pressing
+7. The actor fulfils the form and saves the report to the system by pressing
 
 the “Send report” button.
 
-\8. The system validates the data provided in the form.
+8. The system validates the data provided in the form.
 
-\9. The system shows the confirmation of a successfully sent report.
+9. The system shows the confirmation of a successfully sent report.
 
 Alternative path:
 
@@ -177,37 +177,33 @@ Post condition : The system successfully saved the facility damage report in the
 
 system.
 
-7
 
 
 
 
 
-\6. Activity Diagram
-
-8
+### 6. Activity Diagram
 
 
 
 
 
-\7. State Diagram
 
-9
-
-
-
-
-
-\8. Sequence Diagram
-
-10
+### 7. State Diagram
 
 
 
 
 
-\9. GUI Design
+
+### 8. Sequence Diagram
+
+
+
+
+
+
+### 9. GUI Design
 
 Profile tab. The place where the use case starts. Here is the porter’s
 
@@ -220,8 +216,6 @@ After pressing the button “Apartment” the list of apartments is displayed.
 Here the actor chooses facilities to display the list of facilities of the particular
 
 apartment.
-
-11
 
 
 
@@ -237,7 +231,7 @@ means he successfully selected it. When the facility is selected the next step i
 
 press the button “Report Damaged Facility”.
 
-12
+
 
 
 
@@ -251,15 +245,15 @@ After sending the report pops up a new window notifying the actor about
 
 the successfully sent damaged facility report.
 
-13
 
 
 
 
 
-\10. Design decisions and dynamic analysis
 
-The final project will be developed in .NET Core 5 using C# 9.0. For this
+### 10. Design decisions and dynamic analysis
+
+The final project will be developed in .NET Core 6 using C# 10 For this
 
 desktop application I am going to use the Model-View-ViewModel (MVVM)
 
