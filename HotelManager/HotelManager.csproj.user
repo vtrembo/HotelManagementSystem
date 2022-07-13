@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\ApartmentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateDamageReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FacilityView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RoomView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProfileView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ApartmentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateDamageReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FacilityView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RoomView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProfileView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
