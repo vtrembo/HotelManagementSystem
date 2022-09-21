@@ -87,109 +87,42 @@ Post condition : The system successfully saved the facility damage report in the
 
 ### 8. Sequence Diagram
 
-![Sequence Fiagram](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/SequenceDiagram.png?raw=true)
+![Sequence Diagram](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/SequenceDiagram.png?raw=true)
 
 
 ### 9. GUI Design
 
 Profile tab. The place where the use case starts. Here is the porter’s profile and information about him. Click the “Apartments” button to see the list of apartments.
 
+![Profile Tab](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/GUI/ProfileTab.png?raw=true)
 
+After pressing the button “Apartment” the list of apartments is displayed. Here the actor chooses facilities to display the list of facilities of the particular apartment.
 
-After pressing the button “Apartment” the list of apartments is displayed.
-
-
-
-Here the actor chooses facilities to display the list of facilities of the particular apartment.
-
-
+![Apartments Tab](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/GUI/ApartmentsTab.png?raw=true)
 
 
 On the next screen we can see the list of facilities of the current apartment. The actor clicks on a particular facility to select it.
 
+![Facility Tab](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/GUI/FacilityTab.png?raw=true)
 
 As we can see, the facility the actor clicked on changed its colour that means he successfully selected it. When the facility is selected the next step is to press the button “Report Damaged Facility”.
 
-
-
-
-
-
+![SelectedFacility Tab](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/GUI/SelectedFacilityTab.png?raw=true)
 
 The new window popped up with the report form. The actor fulfils this form and presses the button “Send” to send the report to the system.
 
+![CreateDamageReport Form](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/GUI/CreateDamageReport.png?raw=true)
 
 After sending the report pops up a new window notifying the actor about the successfully sent damaged facility report.
 
-
-
-
+![DamageReportCreated notification](https://github.com/vtrembo/HotelManagementSystem/blob/main/assets/GUI/DamageReportCreated.png?raw=true)
 
 
 
 ### 10. Design decisions and dynamic analysis
 
-The final project will be developed in .NET Core 6 using C# 10 For this
+The final project will be developed in .NET Core 6 using C# 10 For this desktop application I am going to use the Model-View-ViewModel (MVVM) design pattern that is structured to separate program logic and user interface controls.
 
-desktop application I am going to use the Model-View-ViewModel (MVVM)
+Apartments and their types were decided to design with flattered inheritance using enums. The dynamic inheritance from table to indoor and outdoor classes was designed with multiple optional attributes decisions Derived attributes turned into methods.The bag class Rent is going to be implemented without any unique ID that will help to store the history of all rents in the hotel. The usual disjoint inheritance from Person > Employee and other workers was decided to implement as a table-per-type mapping pattern, where all the types are mapped to individual tables. Properties that belong solely to a base type or derived type are stored in a table that maps to that type. Tables that map to derived types alose store a foreign key that joins the derived tablewith the base table. The qualified association between Client and Apartment classes was designed as association with attributes. The associations are designed to be done with foreign keys. Those foreign keys might be shadowed to make the implementation smoother and not to load the models with unnecessary fields. ICollection is designed to be used for associations with more than one instance. Moreover, there is intendence to use the Fluent API to configure whether the relationships and attributes are required or optional.
 
-design pattern that is structured to separate program logic and user interface
-
-controls.
-
-Apartments and their types were decided to design with flattered
-
-inheritance using enums. The dynamic inheritance from table to indoor and
-
-outdoor classes was designed with multiple optional attributes decisions.
-
-Derived attributes turned into methods.The bag class Rent is going to be
-
-implemented without any unique ID that will help to store the history of all
-
-rents in the hotel. The usual disjoint inheritance from Person > Employee and
-
-other workers was decided to implement as a table-per-type mapping pattern,
-
-where all the types are mapped to individual tables. Properties that belong solely
-
-to a base type or derived type are stored in a table that maps to that type. Tables
-
-that map to derived types alose store a foreign key that joins the derived table
-
-with the base table.
-
-The qualified association between Client and Apartment classes was
-
-designed as association with attributes. The associations are designed to be done
-
-with foreign keys. Those foreign keys might be shadowed to make the
-
-implementation smoother and not to load the models with unnecessary fields.
-
-ICollection is designed to be used for associations with more than one instance.
-
-Moreover, there is intendence to use the Fluent API to configure whether the
-
-relationships and attributes are required or optional.
-
-During the dynamic analysis I came to the decision of creating a new
-
-class “FacilityChangeRequest” to complete the idea of the damaged facility. It
-
-inspired me to add more functionalities for Manager and Maiden. After those
-
-modifications Maiden can review the damaged facility request and request the
-
-change. And the manager in his turn can approve or reject the request.
-
-One of the most important influences of dynamic analysis was the
-
-reminder about alternative scenarios. In my opinion a developer should take
-
-more alternative scenarios into consideration to lower the amount of bugs in an
-
-application to improve the user experience.
-
-
-
+During the dynamic analysis I came to the decision of creating a new class “FacilityChangeRequest” to complete the idea of the damaged facility. It inspired me to add more functionalities for Manager and Maiden. After those modifications Maiden can review the damaged facility request and request the change. And the manager in his turn can approve or reject the request. One of the most important influences of dynamic analysis was the reminder about alternative scenarios. In my opinion a developer should take more alternative scenarios into consideration to lower the amount of bugs in an application to improve the user experience.
