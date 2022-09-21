@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManager.csproj": {}
+    "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManagementSystem\\HotelManager\\HotelManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManager.csproj": {
+    "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManagementSystem\\HotelManager\\HotelManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManager.csproj",
+        "projectUniqueName": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManagementSystem\\HotelManager\\HotelManager.csproj",
         "projectName": "HotelManager",
-        "projectPath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManager.csproj",
+        "projectPath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManagementSystem\\HotelManager\\HotelManager.csproj",
         "packagesPath": "C:\\Users\\sweaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\obj\\",
+        "outputPath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManagementSystem\\HotelManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,10 +22,11 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.emzi0767.com/api/v3/index.json": {}
         },
@@ -74,7 +75,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -86,7 +88,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

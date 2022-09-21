@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YSMK+Qv/+k/tXB60LDIrGrWit2PoRa07WukrBDEdrFqmGhL3boD7R781ifN3m5JFZC1kVZoqoCEkxgL5RzvKsw==",
+  "dgSpecHash": "mGH+QLt/uX3BGqGmsj/AvY4zzNs2itZIFyrWXZa23HMtLGhyENpVKgT246EihKN57mo/dU07+71BV1JRDLKMsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManager.csproj",
+  "projectFilePath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\MAS\\Final Project\\HotelManager\\HotelManagementSystem\\HotelManager\\HotelManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sweaz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sweaz\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
